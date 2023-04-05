@@ -64,7 +64,8 @@
     }
     const clickMarker =(testMarker: { id: any; }, e:any) => {
         console.log(testMarker.id)
-        router.push({ path: `/marker/${testMarker.id}` })
+        // router.push({ path: `/marker/${testMarker.id}` })
+        window.location.href = '/public/pannellum-demo/index.html'
     }
     const switchVisible = () => {
         visibleBuilding.value = !visibleBuilding.value;
